@@ -1,0 +1,21 @@
+node_modules
+coverage
+coverage.json
+typechain
+typechain-types
+
+#Hardhat files
+cache
+cache/*
+artifacts
+artifacts/*
+abi
+abi/*
+bin
+bin/*
+
+contracts/.DS_Store
+
+.vscode
+.env
+.DS_Store
