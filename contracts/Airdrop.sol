@@ -81,25 +81,6 @@ contract Airdrop is Ownable {
         return totalEligible - alreadyClaimed[account];
     }
 
-    /*
-    function calculateClaimable(
-        address account,
-        uint256 totalAmount
-    ) public view returns (uint256) {
-        if (firstClaimTimestamp[account] == 0) {
-            return totalAmount / 10; // 10% for the first claim
-        }
-
-        uint256 daysSinceFirstClaim = (block.timestamp - firstClaimTimestamp[account]) / claimPeriod;
-        uint256 totalEligible = (totalAmount * (daysSinceFirstClaim + 1)) / 10;
-        if (totalEligible > totalAmount) {
-            totalEligible = totalAmount;
-        }
-
-        return totalEligible - alreadyClaimed[account];
-    }
-    */
-
     /**
      * @dev Returns true if wallet can claim
      * @param account The address to check if can claim.
